@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Archive</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <!-- style -->
+    <style>
+      body{
+        background-color: rgb(248, 225, 225);
+        overflow-x: hidden;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <h1 class="text-center mt-5">Book Archive</h1>
+
+      <!-- search box -->
+      <div class="input-group m-5 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control" placeholder="search your book" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-search">Search</button>
+      </div>
+      <hr>
+
+      <!-- error div -->
+      <div id="error" class="text-center h3"></div>
+
+
+       <!-- Spinner -->
+       <div class="text-center">
+        <div id="spinner" class="spinner-border d-none" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
+      <div id="country-container" class="row">
+      
+      
+      <!-- total number of search result -->
+      <div id="total-search"></div>
+
+
+      <!-- display search result -->
+      <div id="display-result" class="row row-cols-1 row-cols-md-3 g-4 p-5"></div>
+
+
+
+
+
+      <!-- javascript -->
+    <script src="script.js"></script>
+
+  </body>
+</html>
